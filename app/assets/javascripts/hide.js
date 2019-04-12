@@ -1,5 +1,5 @@
-document.getElementById("hide_this").onclick = function() {hideWhenClicked()};
-
-function hideWhenClicked() {
-  document.getElementById("hide_this").innerHTML =  "/";
+function hideWhenClicked(event) {
+  $target = $(event.target)
+  $target.hide()
 }
+$("#hide_this").click(hideWhenClicked)
